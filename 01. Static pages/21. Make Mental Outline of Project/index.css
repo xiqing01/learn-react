@@ -38,3 +38,18 @@ main > h1 {
   margin: 0;
   font-size: 2.4rem;
 }
+
+.facts-list {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.facts-list > li {
+  margin-block: 10px;
+  line-height: 19px;
+}
+
+.facts-list > li::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
+}
