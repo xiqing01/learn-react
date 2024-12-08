@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
+  background-color: #282D35;
+  color: white;
 }
 
 header {
@@ -26,4 +28,13 @@ nav > img {
 nav > span {
   color: #61DAFB;
   font-size: 1.4rem;
+}
+
+main {
+  padding: 60px 30px;
+}
+
+main > h1 {
+  margin: 0;
+  font-size: 2.4rem;
 }
