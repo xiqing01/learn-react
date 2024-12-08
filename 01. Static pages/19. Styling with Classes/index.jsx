@@ -10,7 +10,7 @@ const root = createRoot(document.getElementById("root"))
 
 function Header() {
     return (
-        <header>
+        <header className="header">
             <img src="react-logo.png" width="40px" alt="React logo" />
             <nav>
                 <ul className="nav-list">
