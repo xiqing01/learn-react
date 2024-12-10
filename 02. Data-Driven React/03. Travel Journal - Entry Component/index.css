@@ -26,11 +26,18 @@ article.journal-entry {
     display: flex;
 }
 
+article.journal-entry .marker {
+    width: 7px;
+    margin-right: 4px;
+}
+
 .main-image-container{
     width: 125px;
     height: 168px;
     overflow: hidden;
     border-redius: 5px;
+    flex-shrink: 0;
+    margin-right: 19px;
 }
 
 .main-image {
