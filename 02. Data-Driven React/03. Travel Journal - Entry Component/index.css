@@ -26,3 +26,6 @@ article.journal-entry {
     display: flex;
 }
 
+.main-image {
+    width: 125px;
+}
