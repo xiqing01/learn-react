@@ -13,3 +13,16 @@
  *   currently are, so don't worry about the fact that you're hard-coding all
  *   this data into the component.
  */
+
+export default function Entry() {
+  return (
+    <article>
+        <img src="https://scrimba.com/links/traval-journal-japan-image-url" alt="mount fuji"/>
+        <div>
+          <img src="../images/marker.png" alt="map marker icon"/>
+          <span>Japan</span>
+          <a href=""></a>
+        <div/>
+    <article/>
+  )
+}
