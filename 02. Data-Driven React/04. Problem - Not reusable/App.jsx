@@ -7,6 +7,7 @@ export default function App() {
             <Header />
             <main className="container">
                 <Entry />
+                <Entry />
             </main>
         </>
     )
