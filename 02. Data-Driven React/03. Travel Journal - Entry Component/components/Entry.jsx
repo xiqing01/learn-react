@@ -1,7 +1,7 @@
 export default function Entry() {
   return (
     <article className="journal-entry">
-        <img src="https://scrimba.com/links/traval-journal-japan-image-url" alt="mount fuji"/>
+        <img className="main-image" src="https://scrimba.com/links/traval-journal-japan-image-url" alt="mount fuji"/>
         <div>
           <img src="../images/marker.png" alt="map marker icon"/>
           <span>Japan</span>
