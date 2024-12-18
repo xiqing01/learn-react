@@ -1,6 +1,6 @@
-export default function Joke() {
+export default function Joke(props) {
   return (
-    <h1>I got my daughter a fridge for her birthday. Punchline: I can't wait to see her face light up when she opens it.
-</h1>
+    <p className="setup">{props.setup}</p>
+    <hr />
   )
 }
