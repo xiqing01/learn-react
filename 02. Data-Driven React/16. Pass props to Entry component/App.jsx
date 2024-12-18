@@ -17,7 +17,18 @@ export default function App() {
         <>
             <Header />
             <main className="container">
-                <Entry />
+                <Entry img={
+                                [
+                                    src="",
+                                    alt=""
+                                ]
+                            }
+                       tltie="Mount Fuji"
+                       country="Japan"
+                       googleMapsLink=""
+                       dates=
+                       text=""
+                />
             </main>
         </>
     )
