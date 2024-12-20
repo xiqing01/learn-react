@@ -5,7 +5,7 @@ Given an array of numbers, return an array of each number, squared
 const nums = [1, 2, 3, 4, 5]
 // -->       [1, 4, 9, 16, 25]
 // Your code here
-
+const.numss = nums.map(num => num * num)
 
 
 
@@ -18,6 +18,7 @@ the first letter of each string is capitalized
 const names = ["alice", "bob", "charlie", "danielle"]
 // -->        ["Alice", "Bob", "Charlie", "Danielle"]
 // Your code here
+const capitalized = names.map(name => name[0].toUpperCase() + name.slice(1))
 
 
 
@@ -34,5 +35,5 @@ return: ["<p>Bulbasaur</p>", "<p>Charmander</p>", "<p>Squirtle</p>"]
 const pokemon = ["Bulbasaur", "Charmander", "Squirtle"]
 // -->          ["<p>Bulbasaur</p>", "<p>Charmander</p>", "<p>Squirtle</p>"]
 // Your code here
-
+const pargraphs = pokemon.map( mon => `<p>${mon}</p>`)
 
