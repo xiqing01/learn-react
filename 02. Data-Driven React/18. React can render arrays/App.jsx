@@ -2,12 +2,7 @@
 
 export default function App() {
     
-    /**
-     * Challenge: manually turn this string array into an array of
-     * JSX elements by surrounding each ninja turtle with an <h2> element
-     */
-    
-    const ninjaTurtles = ["Donatello", "Michaelangelo", "Rafael", "Leonardo"]
+    const ninjaTurtles = [<h3>Donatello</h3>, <h3>Michaelangelo</h3>, <h3>Rafael</h3>, <h3>Leonardo</h3>]
     return (
         <main>
             {ninjaTurtles}
