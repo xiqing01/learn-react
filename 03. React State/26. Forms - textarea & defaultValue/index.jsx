@@ -20,8 +20,8 @@ function App() {
         <label htmlFor="password">Password:</label>
         <input id="password" defaultValue="password123" type="password" name="password" />
 
-        
-        
+        <label htmlFor="description">Description:<label/>
+        <textarea id="description" name="description"><textarea/>
         
 
         
