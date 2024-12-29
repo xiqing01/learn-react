@@ -10,7 +10,7 @@ export default function App() {
     
     return (
         <div>
-            <h1>You have _ unread messages!</h1>
+            {unreadMessages.length > 0 && <h1>You have {unreadMessages.length} unread messages!</h1>}
         </div>
     )
 }
