@@ -14,6 +14,7 @@ function App() {
     const password = formData.get("password")
     const employmentStatus = formData.get("employmentStatus")
     const dietaryRestrictions = formData.getAll("dietaryRestrictions")
+    const favColor = formData.getAll("favColor")
     console.log(dietaryRestrictions)
   }
 
@@ -63,8 +64,15 @@ function App() {
         </label>
         </fieldset>
 
-        
-
+        <label htmlFor="favColor">Whis is your favorite color?</label>
+        <select id="favColor" name="favColor" defaultValue="" required>
+          <option value="" disabled>-- Choose a color --</option>
+          <option value="Red">Red</option>
+          <option value="Orange">Orange</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Green">Green</option>
+        </select>
+          
         <button>Submit</button>
 
       </form>
