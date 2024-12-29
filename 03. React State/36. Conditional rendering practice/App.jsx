@@ -10,9 +10,18 @@ export default function App() {
      * - If there are > 1 unread messages, display "You have <n> unread
      *   messages" (plural)
      */
+    let text
+    if(messages.length === 0) {
+        text = "You're all caught up!"
+    }else if (messages.length === 1) {
+        text = "You have 1 nuread message"
+    }else {
+        text=`You have ${messages.length} unread messages`
+    }
+    
     return (
         <div>
-            <h1></h1>
+            <h1>{text}</h1>
         </div>
     )
 }
