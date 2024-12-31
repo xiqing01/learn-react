@@ -11,8 +11,6 @@ export default function App() {
         isFavorite: false
     })
     
-    
-
     function toggleFavorite() {
         setContact(prevContact => ({
             ...prevContact,
@@ -30,7 +28,7 @@ export default function App() {
                     alt="User profile picture of John Doe"
                 />
                 <div className="info">
-                    <Star />
+                    <Star isFilled={contact.isFavorite} handleClick={toggleFavorite}/>
                     <h2 className="name">
                         {contact.firstName} {contact.lastName}
                     </h2>
