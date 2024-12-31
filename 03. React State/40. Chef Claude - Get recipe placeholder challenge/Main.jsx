@@ -5,19 +5,13 @@ export default function Main() {
     const [ingredients, setIngredients] = React.useState(
         ["all the main spices", "pasta", "ground beef", "tomato paste"]
     )
-    /**
-     * Challenge:
-     * 1. Create a boolean state that, for now, will represent whether
-     *    we've gotten a recipe back from the "chef". Default to `false`.
-     *    Can call it `recipeShown`.
-     * 2. Grab the markup in recipeCode.md and paste it below. This will
-     *    be a placeholder for the content that will come back from the 
-     *    chef once we set up that feature.
-     * 3. When the user clicks the "Get a recipe" button, flip the
-     *    `recipeShown` state to true.
-     * 4. Only display the recipe code content if `recipeShown` is true.
-     */
 
+    const [recipeShown, setReacipeShown] = React.useState(false)
+
+    function toggleRecipeShown() {
+        setRecipeShown(prevShown => !prevShown)
+    }
+    
     const ingredientsListItems = ingredients.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
     ))
@@ -46,10 +40,10 @@ export default function Main() {
                         <h3>Ready for a recipe?</h3>
                         <p>Generate a recipe from your list of ingredients.</p>
                     </div>
-                    <button>Get a recipe</button>
+                    <button onClick={toggleRecipeShown}>Get a recipe</button>
                 </div>}
             </section>}
-            {/** Paste recipeCode.md contents here */}
+            {recipeShown ? <h1>Hello!</h1>}
         </main>
     )
 }
