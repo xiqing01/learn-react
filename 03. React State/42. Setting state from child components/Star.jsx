@@ -2,6 +2,9 @@ import starFilled from "./images/star-filled.png"
 import starEmpty from "./images/star-empty.png"
 
 export default function Star(props) {
+
+  let starIcon = props.isFilled ? starFilled : starEmpty
+  
   return (
     <button
                         aria-pressed={props.isFilled}
