@@ -10,9 +10,12 @@ export default function App() {
      * If darkMode is true, set them to "#222222"
      * If darkMode is false, set them to "#cccccc"
      */
+    const stylse = {
+        backgroundColor: {pads.color}
+    }
     
     const buttonElements = pads.map(pad => (
-        <button key={pad.id}></button>
+        <button style={styles} key={pad.id}></button>
     ))
     
     return (
