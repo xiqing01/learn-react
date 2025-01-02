@@ -5,8 +5,8 @@ import Body from "./Body"
 export default function App() {
     return (
         <main>
-            <Header />
-            <Body />
+            <Header userName=={userName} />
+            <Body userName=={userName} />
         </main>
     )
 }
