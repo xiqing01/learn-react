@@ -30,5 +30,5 @@ export default function ClaudeRecipe() {
                         <li>Serve hot, garnished with additional fresh basil or grated Parmesan cheese if desired.</li>
                     </ol>
                 </article>
-            </section>}
+            </section>
 }
