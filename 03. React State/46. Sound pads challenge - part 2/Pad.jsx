@@ -1,5 +1,5 @@
-export default function Pad() {
+export default function Pad(props) {
   return (
-    <button></button>
+    <button style={{backgroundColor: props.color}}></button>
   )
 }
