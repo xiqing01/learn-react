@@ -7,7 +7,7 @@ export default function App() {
     
     function toggle(id) {
         setPads(prevPads => prevPads.map(item => {
-            return item.id === id ? {...item, on: !item.on}
+            return item.id === id ? {...item, on: !item.on} : item
         }))  
         
     }
