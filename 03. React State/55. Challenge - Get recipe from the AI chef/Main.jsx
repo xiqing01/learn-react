@@ -24,10 +24,11 @@ export default function Main() {
     const [ingredients, setIngredients] = React.useState(
         ["all the main spices", "pasta", "ground beef", "tomato paste"]
     )
-    const [recipeShown, setRecipeShown] = React.useState(false)
+    const [recipe, setRecipe] = React.useState('')
 
-    function getRecipe () {
-        setRecipeShown(prevShown => !prevShown)
+    async function getRecipe () {
+        const generatedRecipeMarkdown = await getRecipeFromChefClaude(ingredients)
+        setRecipe(generatedRecipeMarkdown)
     }
 
     function addIngredient(formData) {
@@ -54,7 +55,7 @@ export default function Main() {
                 />
             }
 
-            {recipeShown && <ClaudeRecipe />}
+            {recipe && <ClaudeRecipe />}
         </main>
     )
 }
