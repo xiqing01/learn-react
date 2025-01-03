@@ -26,7 +26,7 @@ export default function Main() {
     )
     const [recipeShown, setRecipeShown] = React.useState(false)
 
-    function toggleRecipeShown() {
+    function getRecipe () {
         setRecipeShown(prevShown => !prevShown)
     }
 
@@ -50,7 +50,7 @@ export default function Main() {
             {ingredients.length > 0 &&
                 <IngredientsList
                     ingredients={ingredients}
-                    toggleRecipeShown={toggleRecipeShown}
+                    toggleRecipeShown={getRecipe}
                 />
             }
 
